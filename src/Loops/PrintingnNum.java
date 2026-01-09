@@ -8,6 +8,5 @@ public class PrintingnNum {
         for(int n = 1; n <= num; n++){
             System.out.print(" " + n);
         }
-
     }
 }
