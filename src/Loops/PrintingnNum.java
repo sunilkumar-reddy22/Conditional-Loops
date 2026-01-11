@@ -5,8 +5,8 @@ public class PrintingnNum {
         Scanner in = new Scanner(System.in);
         int num = in.nextInt();
         for (int n = 1; n <= num; n++) {
- //           System.out.print(n + " ");
-            System.out.println("Hello World");
+            System.out.print(n + " ");
+  //          System.out.println("Hello World");
         }
     }
 }
