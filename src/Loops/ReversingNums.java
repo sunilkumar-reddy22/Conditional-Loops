@@ -1,8 +1,11 @@
 package Loops;
-
+import java.util.Scanner;
 public class ReversingNums {
     public static void main(String[] args) {
-        int num = 234906;
+        System.out.println("enter digits: ");
+        Scanner input = new Scanner(System.in);
+         int  num = input.nextInt();
+     //   int num = 234906;
         int result = 0;
         while(num >0){
             int rem = num % 10;
