@@ -9,7 +9,7 @@ public class DigitsManipulation {
                   if(n == 5){
                       count++;
                   }
-                   num = num / 10;
+                    num = num / 10;
                 }
         System.out.println(count);
     }
