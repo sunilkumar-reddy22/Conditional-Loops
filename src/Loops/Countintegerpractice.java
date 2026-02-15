@@ -10,8 +10,10 @@ public class Countintegerpractice {
                 count++;
             }
             num = num / 10;
+    //        System.out.println(count);
         }
-        System.out.println(count);
+
+         System.out.println(count);
 
         System.out.println("\nReverse number: ");
         long num1 = 74684;
