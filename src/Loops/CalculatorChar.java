@@ -9,7 +9,7 @@ public class CalculatorChar {
         while (true) {
             System.out.println("Enter a  operator: ");
             char ch = input.next().trim().charAt(0);
-            if(ch == 'y') {
+            if (ch == 'y') {
                 System.out.println("Exit bye");
                 break;
             }
@@ -21,38 +21,35 @@ public class CalculatorChar {
 
                 if (ch == '+') {
                     result = num1 + num2;
-                }
-                if (ch == '-') {
+                } else if (ch == '-') {
                     result = num1 - num2;
-                }
-                if (ch == '*') {
+                } else if (ch == '*') {
                     result = num1 * num2;
-                }
 
-                if (ch == '/') {
-                    if (num2 == 0) {
-                        System.out.println("error cannot divide with 0");
-                    }
-                    if (ch == '/') {
+                } else if (ch == '/') {
+                    if (num2 != 0) {
                         result = num1 / num2;
+                    } else {
+                        System.out.println("cannot do argument with 0");
+                        continue;
                     }
-                    if (ch == '%') {
-                        if (num2 == 0) {
-                            System.out.println("innvalid,cannot to  operation with zero");
-                        }
-                        if (ch == '%') {
-                            result = num1 % num2;
-                        }
+                } else if (ch == '%') {
+                    if (num2 != 0) {
+                        result = num1 % num2;
 
-
+                    } else {
+                        System.out.println("mate! can't divide with o");
+                        continue;
                     }
                 }
                 System.out.println("Result = " + result);
-
             }
-
-
+          else {
+                System.out.println("inavalid operator: check again");
+            }
         }
     }
-
 }
+
+
+
