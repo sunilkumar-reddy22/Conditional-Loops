@@ -88,8 +88,16 @@ public class NumberUtility {
                     else {
                         System.out.println("is not a palindrome");
                     }
-
-
+                }
+                if(choice == 6) {
+                    System.out.println("enter a factorial number: ");
+                    int num6 = num.nextInt();
+                    int  fact = 1;
+                    for (int i = 1; i <=num6; i++) {
+                        fact = fact * i;
+                    }
+                    System.out.println(fact);
+                    break;
                 }
 
             }
