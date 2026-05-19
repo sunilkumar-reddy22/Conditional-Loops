@@ -6,7 +6,7 @@ public class ReverseInteger {
         int num =56478;
         int result = 0;
         while(num > 0) {
-            int rem = num % 10;
+            int rem = num % 10;//formula
             num = num / 10;
 
             result = result * 10 + rem;

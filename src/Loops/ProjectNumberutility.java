@@ -19,28 +19,18 @@ public class ProjectNumberutility {
             int choice = utility.nextInt();
              switch (choice) {
 
-                 case 1:
-                     System.out.println("Enter Number: ");
-                     int num1 = utility.nextInt();
-                     int result = 0;
-                     while (num1 > 0) {
-                         int rem = num1 % 10;
-                         num1 = num1 / 10;
-                         result = result * 10 + rem;
-                     }
-                     System.out.println("Result  = " + result);
-                     break;
+                 int choice = utility.nextInt();
+                 switch (choice) {
 
-                 case 2:
-                     System.out.println("Enter Number");
-                     int num2 = utility.nextInt();
-                     int count = 0;
-                     while (num2 > 0) {
-                         num2 = num2 / 10;
-                         count++;
-                     }
-                     System.out.println("Couunt = " + count);
-                     break;
+                     case 1:
+                         System.out.println("Enter Number: ");
+                         int num1 = utility.nextInt();
+                         int result = 0;
+                         while (num1 > 0) {
+                             int rem = num1 % 10;
+                             num1 = num1 / 10;
+                             result = result * 10 + rem;
+                         }
 
                  case 3:
                      System.out.println("EnterNumber");
